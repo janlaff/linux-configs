@@ -9,6 +9,7 @@ vim.opt.guicursor = ""
 vim.opt.wrap = false
 vim.opt.scrolloff = 8
 vim.opt.hlsearch = false
+vim.opt.signcolumn = "yes"
 vim.opt.completeopt = "menu,menuone,noselect"
 
 require('ensure_packer')
@@ -32,3 +33,4 @@ nvim_lsp.rust_analyzer.setup {
   }
 }
 
+nvim_lsp.clangd.setup {}
