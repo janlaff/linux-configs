@@ -10,10 +10,15 @@ return require('packer').startup(function(use)
     -- TreeSitter
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
     -- Theme
-    use 'arcticicestudio/nord-vim'
+    use 'shaunsingh/nord.nvim'
     -- Hop
     use {
         'phaazon/hop.nvim',
         branch = 'v2', 
+    }
+    -- Lualine
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     }
 end)
