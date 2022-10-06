@@ -11,4 +11,9 @@ return require('packer').startup(function(use)
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
     -- Theme
     use 'arcticicestudio/nord-vim'
+    -- Hop
+    use {
+        'phaazon/hop.nvim',
+        branch = 'v2', 
+    }
 end)

@@ -21,3 +21,8 @@ map('n','<Leader>ar',[[:lua vim.lsp.buf.rename()<cr>]],{})
 map('n','<Leader>=',[[:lua vim.lsp.buf.formatting()<cr>]],{})
 map('n','<Leader>ic',[[:lua vim.lsp.buf.incoming_calls()<cr>]],{})
 map('n','<Leader>oc',[[:lua vim.lsp.buf.outgoing_calls()<cr>]],{})
+
+-- Hop Keybindings
+map('n','<Leader>w',[[:lua require('hop').hint_words()<cr>]],{})
+map('n','<Leader>c',[[:lua require('hop').hint_char1()<cr>]],{})
+map('n','<Leader>l',[[:lua require('hop').hint_lines_skip_whitespace()<cr>]],{})
