@@ -9,6 +9,14 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
+exec feh --bg-scale ~/Downloads/1558939.jpg
+
+# Disable window title bars
+for_window [class=".*"] border pixel 0
+
+# Add some padding around the windows
+gaps inner 20
+
 set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
