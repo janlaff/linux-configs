@@ -22,6 +22,10 @@ map('n', '<Leader>bp', ':bp<CR>', {})
 --map('n','<Leader>ic',[[:lua vim.lsp.buf.incoming_calls()<cr>]],{})
 --map('n','<Leader>oc',[[:lua vim.lsp.buf.outgoing_calls()<cr>]],{})
 map('n','<Leader>a',[[:lua vim.lsp.buf.code_action()<cr>]],{})
+map('n','<Leader>r',[[:lua vim.lsp.buf.rename()<cr>]],{})
+map('n','<Leader>D',[[:lua vim.lsp.buf.declaration()<cr>]],{})
+map('n','<Leader>d',[[:lua vim.lsp.buf.definition()<cr>]],{})
+map('n','<Leader>=',[[:lua vim.lsp.buf.format()<cr>]],{})
 
 -- Hop Keybindings
 --map('n','<Leader>w',[[:lua require('hop').hint_words()<cr>]],{})
