@@ -2,7 +2,6 @@ local options = vim.opt
 local command = vim.api.nvim_command
 
 -- Theme
-options.syntax = "ON"
 options.termguicolors = true
 command("colorscheme nord")
 
@@ -22,4 +21,5 @@ options.number = true
 options.relativenumber = true
 options.guicursor = ""
 options.scrolloff = 8
---options.signcolumn = yes
+options.shortmess = options.shortmess + "c"
+options.signcolumn = "yes"
