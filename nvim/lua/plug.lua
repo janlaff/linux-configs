@@ -9,4 +9,6 @@ return require('packer').startup(function(use)
     use 'L3MON4D3/LuaSnip'
     -- TreeSitter
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+    -- Theme
+    use 'arcticicestudio/nord-vim'
 end)

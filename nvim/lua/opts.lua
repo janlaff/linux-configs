@@ -4,7 +4,7 @@ local command = vim.api.nvim_command
 -- Theme
 options.syntax = "ON"
 options.termguicolors = true
---command("colorscheme gruvbox")
+command("colorscheme nord")
 
 -- Search
 options.hlsearch = false
