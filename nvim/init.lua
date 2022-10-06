@@ -9,15 +9,26 @@ vim.opt.guicursor = ""
 vim.opt.wrap = false
 vim.opt.scrolloff = 8
 vim.opt.hlsearch = false
+vim.opt.completeopt = "menu,menuone,noselect"
 
 require('ensure_packer')
 require('plugins')
 require('lualine').setup()
 require('neoscroll').setup()
 
-local wilder = require('wilder')
-wilder.setup({modes = {':', '/', '?'}})
+local nvim_lsp = require('lspconfig')
 
-wilder.set_option('renderer', wilder.popupmenu_renderer({
-  highlighter = wilder.basic_highlighter(),
-}))
+nvim_lsp.rust_analyzer.setup {
+  settings = {
+    ["rust-analyzer"] = {
+      workspace = {
+        symbol = {
+          search = {
+            kind = "all_symbols"
+          }
+        }
+      }
+    },
+  }
+}
+
