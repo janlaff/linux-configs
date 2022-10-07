@@ -9,9 +9,9 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-exec feh --bg-scale ~/Downloads/1558939.jpg
+exec feh --bg-scale ~/.config/wallpaper/wallpaper.*
 
-# exec --no-startup-id picom -CGb
+exec --no-startup-id picom -CGb --fade-in-step=1 --fade-out-step=1 --fade-delta=0
 
 # Disable window title bars
 for_window [class=".*"] border pixel 0
