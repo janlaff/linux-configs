@@ -11,11 +11,10 @@
 
 exec feh --bg-scale ~/Downloads/1558939.jpg
 
+# exec --no-startup-id picom -CGb
+
 # Disable window title bars
 for_window [class=".*"] border pixel 0
-
-# Add some padding around the windows
-gaps inner 20
 
 set $mod Mod1
 

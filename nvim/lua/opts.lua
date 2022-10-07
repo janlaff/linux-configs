@@ -4,6 +4,7 @@ local command = vim.api.nvim_command
 -- Theme
 options.termguicolors = true
 command("colorscheme nord")
+command("highlight Normal guibg=none")
 
 -- Search
 options.hlsearch = false
