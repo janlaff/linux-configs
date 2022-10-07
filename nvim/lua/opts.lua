@@ -20,7 +20,7 @@ options.smartindent = true
 -- Other
 options.number = true
 options.relativenumber = true
---options.guicursor = ""
+options.guicursor = ""
 options.scrolloff = 8
 options.shortmess = options.shortmess + "c"
 options.signcolumn = "yes"

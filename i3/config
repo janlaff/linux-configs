@@ -10,8 +10,8 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 exec feh --bg-scale ~/.config/wallpaper/wallpaper.*
-
 exec --no-startup-id picom -CGb --fade-in-step=1 --fade-out-step=1 --fade-delta=0
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Disable window title bars
 for_window [class=".*"] border pixel 0
@@ -188,6 +188,6 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-        status_command i3status
-}
+#bar {
+#        status_command i3status
+#}
