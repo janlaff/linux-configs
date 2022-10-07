@@ -6,3 +6,6 @@ fish_add_path $HOME/.cargo/bin
 
 # Set fish theme
 fish_config theme choose Nord
+
+# Default editor
+set -gx EDITOR vim
